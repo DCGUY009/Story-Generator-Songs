@@ -10,6 +10,7 @@ langchain-openai = "*"
 langsmith = "*"
 langchain-community = "*"
 langchain-core = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
