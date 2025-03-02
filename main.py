@@ -17,6 +17,14 @@ class Story(BaseModel):
     verse: str = Field(description="Corresponding verse for which the sub story is generated")
     image_prompts: str = Field(description="Prompts for generating images that display the story visually")
 
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "story_count": self.story_count, 
+            "story": self.story,
+            "verse": self.verse,
+            "image_prompts": self.image_prompts
+            }
+
 
 class Stories(BaseModel):
     stories: List[Story]

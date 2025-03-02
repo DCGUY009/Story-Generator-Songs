@@ -11,6 +11,7 @@ langsmith = "*"
 langchain-community = "*"
 langchain-core = "*"
 python-dotenv = "*"
+streamlit = "*"
 
 [dev-packages]
 
