@@ -41,18 +41,21 @@ def get_stories(
         
 
 
-
-song_title = st.text_input(
+st.title("Story Generator for Songs")
+song_title = st.text_area(
     label="Song Title",
-    placeholder="Enter the title of your song."
+    placeholder="Enter the title of your song.",
+    height=68
     )
-lyrics = st.text_input(
+lyrics = st.text_area(
     label="Lyrics",
-    placeholder="Enter the lyrics of the song here"
+    placeholder="Enter the lyrics of the song here",
+    height=200
     )
-prompt = st.text_input(
+prompt = st.text_area(
     label="Prompt (Optional)",
-    placeholder="Any Special Instructions on what the story and the Images Prompts should be focussed on? (Optional)"
+    placeholder="Any Special Instructions on what the story and the Images Prompts should be focussed on? (Optional)",
+    height=100
     )
 
 if not prompt:
