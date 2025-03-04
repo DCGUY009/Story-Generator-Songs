@@ -1,4 +1,4 @@
-import os
+Iimport os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
@@ -121,6 +121,5 @@ if __name__=="__main__":
     )
 
     print("Here are your stories:------------------------------------------>\n")
-    pprint(result)  # This since telugu verse is being printed as escaped unicode characters 
-    # in the terminal.
+    pprint(result) 
 
