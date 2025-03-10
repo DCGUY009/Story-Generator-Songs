@@ -13,6 +13,7 @@ langchain-core = "*"
 python-dotenv = "*"
 streamlit = "*"
 openai-whisper = "*"
+deepgram-sdk = "*"
 
 [dev-packages]
 
